@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Tarefa</title>
+</head>
+<body>
+<form action="/alterar" method="post">
+    <input type="hidden" name="id"  value="${id}/>
+    <label for="texto">Texto:</label>
+    <input type="text" name="texto" />
+    <br/>
+    <label for="prioridade">Prioridade:</label>
+    <input type="number" name="prioridade" />
+    <br/>
+    <label for="data">Data:</label>
+    <input type="date" name="data"/>
+    <br/>
+    <input type="submit" value="Salvar"/>
+    <p>ID da tarefa: ${id}</p>
+</form>
+</body>
+</html>
